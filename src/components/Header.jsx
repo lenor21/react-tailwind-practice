@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div className='h-16 w-full bg-[#333] shadow-md fixed top-0 left-0 z-50'>
-      <nav className='flex h-full px-5 text-white justify-between items-center'>
+      <nav className='flex h-full px-5 text-white justify-between items-center md:mx-10'>
         <h1>
           <a className='text-xl font-medium' href='#'>
             Authentication
@@ -23,7 +23,7 @@ const Header = () => {
         </h1>
 
         {/* menu pc */}
-        <ul className='flex hidden'>
+        <ul className='md:flex hidden gap-x-7'>
           <li>
             <NavLink to='/'>Home</NavLink>
           </li>
@@ -32,6 +32,14 @@ const Header = () => {
           </li>
           <li>
             <NavLink to='/register'>Register</NavLink>
+          </li>
+          <li>
+            <NavLink
+              className='bg-blue-800 w-full px-5 py-2 ml-5 rounded-md'
+              to='#'
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
 
@@ -60,7 +68,7 @@ const Header = () => {
           </li>
         </ul>
 
-        <div onClick={handleMenuButton}>
+        <div className='md:hidden' onClick={handleMenuButton}>
           {menuButton ? (
             <FaTimes className='h-6 w-6' />
           ) : (
