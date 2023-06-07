@@ -47,7 +47,7 @@ const Header = () => {
         <ul
           className={`${
             menuButton ? 'translate-x-0' : 'translate-x-full'
-          } transition-all duration-300 grid text-[#fff] font-medium bg=[#333] backdrop-blur-sm backdrop-brightness-50 h-auto w-full absolute top-16 left-0 py-5`}
+          } transition-all duration-300 grid text-[#fff] font-medium bg=[#333] backdrop-blur-sm backdrop-brightness-50 h-auto w-full absolute top-16 left-0 py-5 md:hidden`}
         >
           <li className='text-center py-3'>
             <NavLink to='/'>Home</NavLink>
